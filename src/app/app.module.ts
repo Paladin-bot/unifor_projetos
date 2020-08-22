@@ -10,16 +10,24 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+
 
 import { AccordionModule } from 'primeng/accordion';     //accordion and accordion tab
 import { FormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
+import { PlanilhaComponent } from './planilha/planilha.component';
+import { MenuDeBuscaComponent } from './menu-de-busca/menu-de-busca.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    PlanilhaComponent,
+    MenuDeBuscaComponent
   ],
   imports: [
     BrowserModule,
@@ -30,10 +38,13 @@ import { InputTextModule } from 'primeng/inputtext';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    MatTableModule,
+    MatToolbarModule,
+    MatIconModule,
 
     AccordionModule,
     FormsModule,
-    InputTextModule
+    InputTextModule,
 
   ],
   providers: [],
